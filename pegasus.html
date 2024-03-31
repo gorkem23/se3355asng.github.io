@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlyPGS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1><div class="pegasuslogo"></div></h1>
+    <nav>
+      <ul class="topselect">
+        <li><a href="#">KAMPANYALAR</a></li>
+        <li><a href="#">BİLET İŞLEMLERİM</a></li>
+        <li><a href="#">HİZMETLERİMİZ</a></li>
+        <li><a href="#">BOLBOL</a></li> 
+        <li><a href="#">BİZE YAZIN</a></li>
+        <li><a href="#">DİĞER</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <div class="search"></div>
+      <div class="bolbolgiris"></div>
+      <div class="flag"></div>
+      <button class="TRbutton">TR</button>
+      <span class="ok">></span>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="slideshow-container"> 
+      <div class="mySlides">
+        <div class="slide"><img src="https://mediap.flypgs.com/1920//files/ana_sayfa_hero_banner/TR/2024/brand/sezon_acilis24/desktop_web_slider.webp"></div>
+        <div class="slide"><img src="https://mediap.flypgs.com/1920//files/ana_sayfa_hero_banner/TR/2024/bolbol/kalici_banner/mart_revize/web_slider.webp"></div>
+      </div>
+      <div class="slide-controls">
+        <button onclick="pauseSlides()"><img src="https://img.icons8.com/ios/50/000000/pause--v2.png"/></button>
+        <button onclick="plusSlides(-1)"><img src="https://img.icons8.com/ios/50/000000/back.png"/></button>
+        <button onclick="plusSlides(1)"><img src="https://img.icons8.com/ios/50/000000/forward.png"/></button>
+      </div>
+      <button class="sticky-button">
+        <img src="https://cro.hype.com.tr/image-api/2dY4AtvaHHAx3dceWLOFe9a986e22d3a170e7997459cbd04363f.svg" alt="slidelogo">
+      </button>
+    </div>
+
+    <div class="container2">
+          <div class="tabs">
+              <button class="tab">Ucuz Uçak Bileti Ara</button>
+              <button class="tab">Online Check-In</button>
+              <button class="tab">Uçuşunu Yönet</button>
+              <button class="tab">Araç Kiralama / Konaklama</button>
+          </div>
+          <div class="flight-type">
+              <div class="flight-option">
+                  <input type="radio" id="one-way" name="flight-type" checked>
+                  <label for="one-way">Tek Yön</label>
+              </div>
+              <div class="flight-option">
+                  <input type="radio" id="round-trip" name="flight-type">
+                  <label for="round-trip">Gidiş Dönüş</label>
+              </div>
+          </div>
+          <div class="input-group">
+              <label for="from">Nereden</label>
+              <select id="from">
+                  <option value="IST">İstanbul</option>
+                  <option value="ANK">Ankara</option>
+                  <option value="IZM">İzmir</option>
+                  <!-- ... -->
+              </select>
+          </div>
+          <div class="input-group">
+              <label for="to">Nereye</label>
+              <select id="to">
+                  <option value="IST">İstanbul</option>
+                  <option value="ANK">Ankara</option>
+                  <option value="IZM">İzmir</option>
+                  <!-- ... -->
+              </select>
+          </div>
+          <div class="input-group">
+              <label for="departure-date">Gidiş tarihi</label>
+              <input type="date" id="departure-date">
+          </div>
+          <div class="input-group">
+              <label for="return-date">Dönüş tarihi</label>
+              <input type="date" id="return-date">
+          </div>
+          <div class="input-group">
+              <label for="passenger">Yolcu</label>
+              <input type="text" id="passenger" placeholder="Yolcu 1 Yetişkin">
+          </div>
+          <div class="search-button">Ucuz Uçuş Ara</div>
+      </div>
+  </div>
+
+  <div class="hype-app-download-homepage-banner-content">
+    <div class="hype-app-download-banner-text">
+        <div class="hype-app-download-banner-text-title">Mobil Uygulamayı İndir , Avantajları Kaçırma !</div>
+        <div class="hype-app-download-banner-text-content">
+            <img src="https://cro.hype.com.tr/image-api/dC4ygWuMueou18eEw0Km7cfe32fbd68f37af16727524aa9e384a.svg" width="25" height="25" alt="bullet icon">
+            <div>Kampanyalardan <span class="hype-app-download-banner-text-bold">1 gün önce</span> haberdar ol!</div>
+        </div>
+        <div class="hype-app-download-banner-text-content">
+            <img src="https://cro.hype.com.tr/image-api/dC4ygWuMueou18eEw0Km7cfe32fbd68f37af16727524aa9e384a.svg" width="25" height="25" alt="bullet icon">
+            <div>Tüm işlemlerini tek ekranda yönet.</div>
+        </div>
+        <div class="hype-app-download-banner-text-content">
+            <img src="https://cro.hype.com.tr/image-api/dC4ygWuMueou18eEw0Km7cfe32fbd68f37af16727524aa9e384a.svg" width="25" height="25" alt="bullet icon">
+            <div><span class="hype-app-download-banner-text-bold">BolBol Oyna</span> ile BolBol kazan!</div>
+        </div>
+        <div class="hype-app-download-banner-text-content">
+            <img src="https://cro.hype.com.tr/image-api/dC4ygWuMueou18eEw0Km7cfe32fbd68f37af16727524aa9e384a.svg" width="25" height="25" alt="bullet icon">
+            <div>Biletini uçak hızında al.</div>
+        </div>
+    </div>
+    <div class="hype-app-download-banner-telephoneImg">
+        <img src="https://cro.hype.com.tr/image-api/QIUo0DgZOciM4jaVfSIB20520ff5aa53d4460d74da12f00f0892.svg" width="185" height="370" alt="telephone image">
+    </div>
+    <div class="hype-app-download-banner-qrCode">
+        <div class="hype-app-download-banner-qrCode-img">
+            <img src="https://cro.hype.com.tr/image-api/QvpI2l7xVMWDleEIzeusfdf970671255e123ff472a35c6df38c2.svg" width="155" height="155" alt="qr-code image">
+        </div>
+        <div class="hype-app-download-banner-qrCode-text">
+            <span>QR kodunu tara,<br>mobil uygulamayı anında indir</span>
+        </div>
+    </div>
+</div>
+
+<button class="info-button">Sürdürülebilirlik kapsamındaki çalışmalarımız hakkında bilgi almak için Sürdürülebilirlik Merkezimizi ziyaret edin! Buradan başlayabilirsiniz.</button>
+
+<button class="sticky-container">
+    <img src="https://www.flypgs.com/FrontEnd_Home/dist/assets/img/newsllet-icon.svg" alt="Logo">
+</button>
+
+<button class="sticky-container-right">
+    <img src="https://cdnp.flypgs.com/files/desktop_default.png" alt="Right Logo">
+</button>
+
+<script src="pegasus.js"></script>
+  
+</body>
+</html>
